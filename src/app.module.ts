@@ -5,6 +5,8 @@ import { ProjectsModule } from './projects/projects.module';
 import { MulterModule } from '@nestjs/platform-express';
 import { memoryStorage } from 'multer';
 import { CertificatesModule } from './certificates/certificates.module';
+import * as dotenv from 'dotenv';
+dotenv.config();
 const mongoUrl = process.env.MONGO_URL;
 if (!mongoUrl) {
   throw new Error('MONGO_URL environment variable is not defined');
