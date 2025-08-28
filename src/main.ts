@@ -8,7 +8,8 @@ async function bootstrap() {
     origin: [
       'http://localhost:5173',
       'https://hazemgamal-sable.vercel.app',
-      'https://hazemgamal.vercel.app/'
+      'https://hazemgamal.vercel.app/',
+      'https://modern-portfolio-delta-gilt.vercel.app/'
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
@@ -19,3 +20,4 @@ async function bootstrap() {
   console.log(`🚀 Server is running on port ${port}`);
 }
 bootstrap();
+
