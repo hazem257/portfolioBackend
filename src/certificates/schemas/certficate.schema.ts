@@ -10,7 +10,8 @@ export class Certificate {
 
     @Prop()
     description?: string;
-
+    @Prop({ required: true })
+    hour: string;
     @Prop({ required: true })
     company: string;
 
