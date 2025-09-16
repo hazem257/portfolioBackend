@@ -72,6 +72,15 @@ async update(
     ...(imageUrl && { imageUrl }),
   });
 }
+@Get('stats')
+async getStats() {
+  const all = await this.certificatesService.findAll();
+  return {
+    total: all.length,
+    latest: all[all.length - 1] || null,
+  };
+}
+
 
 
   @Delete(':id')
